@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css.css">
 </head>
-<body>
+<body style="background-color: rgb(26, 25, 25);">
     <!--Sidebar nav -->
     <!--Main content-->
     <div id="mySidebar" class="sidebar">
@@ -32,9 +32,65 @@
 
     <button class="openbtn" onclick="openNav()">&#9776;Sidebar</button>
     <!--main content -->
-    <div class="jumbotron">
-      <h1 class="display-4" style="text-align: center;">Projects</h1>
+    <div class="jumbotron" style="background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 39%, rgba(2,0,36,1) 100%);">
+      <h1 style="text-align: center; color: aliceblue;">Projects</h1>
     </div>
+
+    <!--projects-->
+
+    <div class="row">
+      <div class="col-sm-1"><!-- easy way to just to move the cards to the right-->
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <img class="card-img-top" src="./images/under-construction.jpg" alt="Card image cap" style="height: 13rem;">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="./home.html"class="btn btn-success">Complete</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p class="projectsidetext">blah blahblah blahblah blahblah blah</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-sm-1"><!-- easy way to just to move the cards to the right-->
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <img class="card-img-top" src="./images/under-construction.jpg" alt="Card image cap" style="height: 13rem;">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="./home.html" class="btn btn-warning">In Progress</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p class="projectsidetext">blah blahblah blahblah blahblah blah</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-sm-1"><!-- easy way to just to move the cards to the right-->
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <img class="card-img-top" src="./images/under-construction.jpg" alt="Card image cap" style="height: 13rem;">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="./home.html" class="btn btn-danger">Paused</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p class="projectsidetext">blah blahblah blahblah blahblah blah</p>
+      </div>
+    </div>
+    <!--projects-->
+
     <!--javascript -->
     <script src="./javascript.js"></script>
 </body>
