@@ -42,6 +42,11 @@ body, html {
   transition: transform 0.3s ease-in-out; /* fix the overflow issue with the images l8r*/
 }
 
+#cards:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 
 /*///////////////////////////////////////////*/
 
