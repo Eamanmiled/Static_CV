@@ -114,3 +114,32 @@ body, html {
   margin: 0;
   padding: 30px 0; /* Adjust padding as needed */
 }
+
+/*///////////////////CV page////////////////////////*/
+.columns-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* First column (smaller width) */
+.column-1, .column-5 {
+  width: 20%; /* Adjust the percentage as needed for the smaller column */
+  background-color: #e5e9eb; /* Optional: background color for visibility */
+}
+
+.column-2 {
+  width: 10%; /* Adjust the percentage as needed for the smaller column */
+  background-color: #888a8b; /* Optional: background color for visibility */
+}
+
+/* Second and third columns (equal width) */
+.column-3, .column-4 {
+  width: 25%; /* Each column gets 40% of the width */
+  background-color: #ffffff; /* Optional: background color for visibility */
+}
+
+/* Ensure the columns take full height */
+.column-1, .column-2, .column-3 {
+  padding: 10px; /* Optional: padding for content */
+  box-sizing: border-box; /* Include padding and border in width/height calculations */
+}
