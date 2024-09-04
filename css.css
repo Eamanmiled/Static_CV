@@ -109,6 +109,16 @@ body, html {
   text-align: center;
   text-decoration: underline;
 }
+
+.project_footer{
+  margin-top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
 /*////////////jumbotron//////////////////*/
 .jumbotron {
   margin: 0;
