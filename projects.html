@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css.css">
 </head>
-<body style="background-color: #393e46;; overflow-x: hidden;">
+<body style="overflow-x: hidden;">
     <!--Sidebar nav -->
     <!--Main content-->
     <div id="mySidebar" class="sidebar">
@@ -32,23 +32,65 @@
 
     <button class="openbtn" onclick="openNav()">&#9776;</button>
     <!--main content -->
-    <div class="jumbotron" style="background: radial-gradient(circle, rgba(249,109,0,1) 47%, rgba(34,40,49,1) 93%);">
-      <h1 style="text-align: center; color: #222831;">Projects</h1>
+    <div class="jumbotron" style="background: #f96d00; width: 105%;">
+      <div class="row">
+        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
+        </div>
+        <div class="col" style="color: aliceblue;">
+          <h1>Welcome to My Projects</h1>
+          <div style="color: #393e46;">
+          <p class="lead">I'm excited to share my professional journey, skills, and achievements with you. 
+          Whether you're a potential employer, collaborator, or just exploring, this page provides a comprehensive 
+          overview of what I bring to the table.</p>
+          </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
+        </div>
+      </div>
     </div>
 
     <!--projects-->
-    <div class="jumbotron" style="background: linear-gradient(90deg, rgba(121,114,9,1)
-       30%, rgb(26, 25, 25) 100%);">
-      <h3 style="text-align: center; color: aliceblue;">In Progress</h3>
+    <div class="jumbotron" style="background: #fff">
+      <h3 style="text-align: center; color:#393e46;">In Progress</h3>
     </div>
-    <br>
+    <div class="row">
+      <div class="col-lg-3" style="left: 5%;">
+        <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
+          <img class="card-img-top" src="./images/frontend.png" alt="Card image cap" id="cardimage">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="https://github.com/Eamanmiled/Front_End_Libarys" 
+              class="btn btn-warning">In Progress</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" style="left: 10%;">
+        <div class="card" style="width: 22rem; height: auto;">
+          <img class="card-img-top" src="./images/frontend.png" alt="Card image cap" id="cardimage">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="https://github.com/Eamanmiled/Front_End_Libarys" 
+              class="btn btn-warning">In Progress</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="left: 15%;">
+        <div class="card" style="width: 22rem; height: auto;">
+          <img class="card-img-top" src="./images/frontend.png" alt="Card image cap" id="cardimage">
+          <div class="card-body">
+            <h2 class="card-title">Project: <a href="https://github.com/Eamanmiled/Front_End_Libarys" 
+              class="btn btn-warning">In Progress</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-sm-1"><!-- easy way to just to move the cards to the right-->
       </div>
       <div class="col-sm-3" id="cards">
         <div class="card" style="width: 18rem; height: 19rem;">
-          <img class="card-img-top" src="./images/frontend.png" alt="Card image cap" style="height: 13rem;">
+          <img class="card-img-top" src="./images/frontend.png" alt="Card image cap" id="cardimage">
           <div class="card-body">
             <h2 class="card-title">Project: <a href="https://github.com/Eamanmiled/Front_End_Libarys" 
               class="btn btn-warning">In Progress</a></h2>
@@ -78,7 +120,7 @@
       </div>
       <div class="col-sm-3" id="cards">
         <div class="card" style="width: 18rem; height: 19rem;">
-          <img class="card-img-top" src="./images/zelda-clone.png" alt="Card image cap" style="height: 13rem;">
+          <img class="card-img-top" src="./images/zelda-clone.png" alt="Card image cap" id="cardimage">
           <div class="card-body">
             <h3 class="card-title">Zelda Clone: <a href="https://github.com/Eamanmiled/Zelda_2d_Game"
               class="btn btn-success">Complete</a></h3>
@@ -106,7 +148,7 @@
       </div>
       <div class="col-sm-3" id="cards">
         <div class="card" style="width: 18rem; height: 19rem;">
-          <img class="card-img-top" src="./images/calc.png" alt="Card image cap" style="height: 13rem;">
+          <img class="card-img-top" src="./images/calc.png" alt="Card image cap" id="cardimage">
           <div class="card-body">
             <h3 class="card-title">Calculator: <a href="https://github.com/Eamanmiled/Calculators"
               class="btn btn-success">Complete</a></h3>
@@ -128,7 +170,7 @@
       </div>
       <div class="col-sm-3" id="cards">
         <div class="card" style="width: 18rem; height: 19rem;">
-          <img class="card-img-top" src="./images/XO's.png" alt="Card image cap" style="height: 13rem;">
+          <img class="card-img-top" src="./images/XO's.png" alt="Card image cap" id="cardimage">
           <div class="card-body">
             <h3 class="card-title">XOs game: <a href="https://github.com/Eamanmiled/XO-s_Game"
               class="btn btn-success">Complete</a></h3>
@@ -156,7 +198,7 @@
       <div class="col-sm-3" id="cards">
         <div class="card" style="width: 18rem; height: 21rem;">
           <img class="card-img-top" src="./images/under-construction.jpg" alt="Card image cap" 
-          style="height: 13rem;">
+          id="cardimage"">
           <div class="card-body">
             <h2 class="card-title">Bar Website: <a href="./home.html" class="btn btn-danger">Paused</a></h2>
           </div>
