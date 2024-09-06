@@ -104,6 +104,17 @@ body, html {
   }
 /*///////////////////projects page////////////////////////*/
 
+#headingbox{
+  width: fit-content;
+  height: fit-content;
+  background-color: #f96d00;
+  border-radius: 5%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  color: #ffffff;
+}
+
 .project_headings{
   color: aliceblue;
   text-align: center;
@@ -130,12 +141,16 @@ body, html {
   width:22rem; 
   height: auto; 
   border-radius: 5%;
-  background-color:#fdfdfd;
+  background-color:#eceaea;
 }
 
 .card:hover{
   transform: scale(1.1);
   transition: 1.1s;
+  box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+25px 0px 20px -20px rgba(0,0,0,0.45),
+0px 25px 20px -20px rgba(0,0,0,0.45),
+-25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 /*////////////jumbotron//////////////////*/
 .jumbotron {
