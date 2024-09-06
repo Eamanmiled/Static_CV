@@ -107,11 +107,11 @@ body, html {
 #headingbox{
   width: fit-content;
   height: fit-content;
-  background-color: #f96d00;
+  background-color:#818181;
   border-radius: 5%;
   text-align: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
   color: #ffffff;
 }
 
@@ -119,16 +119,6 @@ body, html {
   color: aliceblue;
   text-align: center;
   text-decoration: underline;
-}
-
-.project_footer{
-  margin-top: 40px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(18, 17, 17);
-  color: white;
-  text-align: center;
 }
 
 #cardimage{
@@ -141,8 +131,22 @@ body, html {
   width:22rem; 
   height: auto; 
   border-radius: 5%;
-  background-color:#eceaea;
+  background-color:#f9f9f9;
 }
+
+/* .arrow{
+  display: flex;
+  justify-content: center;
+  height: 190px;
+  opacity: 0;
+  transition: opacity 3s ease-in;
+}
+.arrow.visible{
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  height: 190px;
+} */
 
 .card:hover{
   transform: scale(1.1);
