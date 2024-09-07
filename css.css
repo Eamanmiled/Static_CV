@@ -20,6 +20,20 @@ body, html {
   transition: 0.5s ease-out;
 }
 
+.logo{
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10%;
+  font-size: 30px;
+  transition: 0.5s ease-out;
+  align-items: center;
+}
+
+.logo:hover{
+  transition: 0.5s ease-out;
+  transform: scale(1.8);
+}
+
 .arrow{
   display: flex;
   justify-content: center;
@@ -112,12 +126,11 @@ body, html {
 #headingbox{
   width: fit-content;
   height: fit-content;
-  background-color:#818181;
   border-radius: 5%;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  color: #ffffff;
+  color:#444;
 }
 
 .project_headings{
