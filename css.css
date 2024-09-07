@@ -27,6 +27,8 @@ body, html {
   font-size: 30px;
   transition: 0.5s ease-out;
   align-items: center;
+  color: #111;
+  text-decoration: none;
 }
 
 .logo:hover{
