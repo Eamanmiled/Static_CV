@@ -164,19 +164,17 @@ body, html {
   transition: 1.1s;
 }
 
-/* .arrow{
-  display: flex;
-  justify-content: center;
-  height: 190px;
-  opacity: 0;
-  transition: opacity 3s ease-in;
+.cardlogo{
+  height: fit-content;
+  width: fit-content;
+  font-size: medium;
+  border-radius: 10%;
+  font-size: 30px;
+  transition: 0.5s ease-out;
+  align-items: center;
+  color: #111;
+  text-decoration: none;
 }
-.arrow.visible{
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  height: 190px;
-} */
 
 .card:hover{
   transform: scale(1.1);
