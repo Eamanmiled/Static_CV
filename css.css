@@ -33,7 +33,7 @@ body, html {
 
 .logo:hover{
   transition: 0.5s ease-out;
-  transform: scale(1.8);
+  transform: scale(1.4);
 }
 
 .arrow{
