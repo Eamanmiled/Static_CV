@@ -12,7 +12,7 @@ This repository contains the source code for my static personal portfolio websit
 
 - **HTML**: Structure and layout of the site.
 - **CSS**: Styling and responsive design.
-- **JavaScript**: For interactive elements (optional, depending on if you include any JS features).
+- **JavaScript**: For interactive elements.
 - **GitHub Pages**: Hosting the static website.
 - **Cloudflare**: Domain Managment Service.
 
