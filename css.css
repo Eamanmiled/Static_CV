@@ -1,208 +1,395 @@
+CSS
+
+
 body, html {
+
   margin: 0;
+
   padding: 0;
+
   width: 100%;
+
   height: 100%;
+
 }
+
 /*///////////////homepage//////////////////////*/
+
 #home-page{
+
   overflow-x: hidden;
+
 }
+
 
 #picofme{
+
   transition: 1.5s;
+
 }
+
 
 #picofme:hover{
+
   transform: scale(1.1);
+
   transition: 0.5s ease-out;
+
 }
+
 
 .logo{
+
   height: fit-content;
+
   width: fit-content;
+
   border-radius: 10%;
+
   font-size: 30px;
+
   transition: 0.5s ease-out;
+
   align-items: center;
+
   color: #111;
+
   text-decoration: none;
+
 }
+
 
 .logo:hover{
+
   transition: 0.5s ease-out;
+
   transform: scale(1.4);
+
 }
+
 
 .arrow{
+
   display: flex;
+
   justify-content: center;
+
   height: 190px;
+
   opacity: 0;
+
   transition: opacity 1s ease-in;
+
 }
+
 .arrow.visible{
+
   opacity: 1;
+
   display: flex;
+
   justify-content: center;
+
   height: 190px;
+
 }
+
 
 #fadeinrow{
+
   opacity: 0;
+
   transition: opacity 3s ease-in;
+
 }
+
 
 #fadeinrow.visible{
+
   opacity: 1;
+
 }
+
 
 .bigbox{
+
   width: 250px;
+
   height: 250px;
+
   background-color: #f96d00;
+
   border: #f96d00;
+
   color: #ffffff;
+
   border-radius: 10px;
+
   transition: 1s;
+
 }
 
+
 .bigbox:hover{
+
   transform: scale(1.1);
+
   transition: 1s;
+
   box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+
 25px 0px 20px -20px rgba(0,0,0,0.45),
+
 0px 25px 20px -20px rgba(0,0,0,0.45),
+
 -25px 0px 20px -20px rgba(0,0,0,0.45);
+
 }
+
 
 /*//////////////////sidebar/////////////////////////*/
 
+
 .sidebar { 
+
   height: 100%;
+
   width: 0;
+
   position: fixed; 
+
   z-index: 1;
+
   padding-top: 60px;
+
   top: 0;
+
   left: 0;
+
   background-color: #111;
+
   overflow-x: hidden; 
+
   transition: 0.5s;
+
 }
+
   
+
 
 .sidebar a {  /* The sidebar links */
+
   padding: 8px 8px 8px 32px;
+
   text-decoration: none;
+
   font-size: 25px;
+
   color: #818181;
+
   display: block;
+
   transition: 0.3s;
+
   }
+
   
+
 
 .sidebar a:hover {   /* navigation links hover */
+
   color: #f1f1f1;
+
   }
+
   
+
 
 .sidebar .closebtn {
+
   position: absolute;
+
   top: 0;
+
   right: 25px;
+
   font-size: 36px;
+
   margin-left: 50px;
+
   }
+
   
 
+
 .openbtn {
+
   position: absolute;
+
   left: 25px;
+
   font-size: 20px;
+
   cursor: pointer;
+
   background-color: #111;
+
   color: white;
+
   padding: 10px 15px;
+
   border: none;
+
   }
+
 
 .openbtn:hover {
+
   background-color: #444;
+
   }
+
 /*///////////////////projects page////////////////////////*/
 
+
 #headingbox{
+
   width: fit-content;
+
   height: fit-content;
+
   border-radius: 5%;
+
   text-align: center;
+
   margin: 0 auto;
+
   padding: 10px;
+
   color:#444;
+
 }
+
 
 .project_headings{
+
   color: aliceblue;
+
   text-align: center;
+
   text-decoration: underline;
+
 }
+
 
 #cardimage{
+
   height: 13rem; 
+
   border-top-left-radius: 5%;
+
   border-top-right-radius: 5%
+
 }
+
 
 .card{
+
   width:22rem; 
+
   height: auto; 
+
   border-radius: 5%;
+
   background-color:#f9f9f9;
+
   transition: 1.1s;
+
 }
+
 
 .cardlogo{
+
   height: fit-content;
+
   width: fit-content;
+
   font-size: medium;
+
   border-radius: 10%;
+
   font-size: 30px;
+
   transition: 0.5s ease-out;
+
   align-items: center;
+
   color: #111;
+
   text-decoration: none;
+
 }
+
 
 .card:hover{
+
   transform: scale(1.1);
+
   transition: 1.1s;
+
   box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+
 25px 0px 20px -20px rgba(0,0,0,0.45),
+
 0px 25px 20px -20px rgba(0,0,0,0.45),
+
 -25px 0px 20px -20px rgba(0,0,0,0.45);
-}
-.horizontal-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;  
-  gap: 10px;      
+
 }
 
-.desc{
-  width: auto;
-  height: auto;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: #f96d00 2px;
-  border-radius: 25%;
-  color: white;
-  background-color: #f96d00;
-}
-/*////////////jumbotron//////////////////*/
-.jumbotron {
+.horizontal-list {
+
+  list-style: none;
+
+  padding: 0;
+
   margin: 0;
+
+  display: flex;  
+
+  gap: 10px;      
+
+}
+
+
+.desc{
+
+  width: auto;
+
+  height: auto;
+
+  padding: 5px;
+
+  padding-left: 10px;
+
+  padding-right: 10px;
+
+  border: #f96d00 2px;
+
+  border-radius: 25%;
+
+  color: white;
+
+  background-color: #f96d00;
+
+}
+
+/*////////////jumbotron//////////////////*/
+
+.jumbotron {
+
+  margin: 0;
+
   padding: 30px 0; /* Adjust padding as needed */
+
 }
