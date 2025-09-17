@@ -1,443 +1,283 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Projects Showcase | Eamann Miled</title>
-
     <link rel="icon" type="imagex-icon" href="./images/fav.ico">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="./css.css">
 
 </head>
 
 <body style="background-color: rgb(255, 255, 255);overflow-x: hidden;">
 
-    <!--Main content-->
-
-    <!--Sidebar nav -->
-
+    <!-- Sidebar nav -->
     <div id="mySidebar" class="sidebar">
-
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <h1 style="color: white;">Directory</h1>
-
-      <a href="./home.html"><h1>Home</h1></a>
-
-      <a href="./projects.html"><h1>Projects Showcase</h1></a>
-
-      <a href="./past_projects.html"><h1>Projects List</h1></a>
-
-      <a href="./coding-CV.pdf"><h1>CV</h1></a>
-
-  </div>
-
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1 style="color: white;">Directory</h1>
+        <a href="./home.html"><h1>Home</h1></a>
+        <a href="./projects.html"><h1>Projects Showcase</h1></a>
+        <a href="./past_projects.html"><h1>Projects List</h1></a>
+        <a href="./coding-CV.pdf"><h1>CV</h1></a>
+    </div>
 
     <button class="openbtn" onclick="openNav()">&#9776;</button>
 
-    <!--main content -->
-
+    <!-- Header -->
     <div class="jumbotron" style="background: #f96d00; width: 100%;">
-
-      <div class="row">
-
-        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
-
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-md-5" style="color: aliceblue;">
+                <br>
+                <h1>Welcome to My Projects Showcase</h1>
+                <div style="color: #393e46;">
+                    <p class="lead">Here, you'll find a small collection of my in progress & completed projects.</p>
+                    <p>Whether you're a potential collaborator, employer, or just exploring, this section provides a
+                        look at my accomplishments.</p>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2"></div>
         </div>
-
-        <div class="col-md-5" style="color: aliceblue;">
-
-          <br>
-
-          <h1>Welcome to My Projects Showcase</h1>
-
-          <div style="color: #393e46;">
-
-          <p class="lead">Here, you'll find a small collection of my in progress & completed projects.</P>
-
-          <p>Whether you're a potential collaborator, employer, or just exploring, this section provides a
-
-             look at my accomplishments.</p>
-
-          </div>
-
-        </div>
-
-        <div class="col-sm-1">
-
-        </div>
-
-        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
-
-        </div>
-
-      </div>
-
     </div>
 
-
-    <!--projects-->
-
+    <!-- Complete Section -->
     <br>
-
-
-    <h1 id="headingbox">Complete</h1><!--//////////This is the complete section/////////////-->
-
+    <h1 id="headingbox">Complete</h1>
     <br>
-
     <div class="row justify-content-center">
 
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
-
-          <img class="card-img-top" src="./images/zelda-clone.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>2D Zelda</h3>
-
-            <p>In this game, you find yourself in a dark, damp dungeon searching for your kidnapped dog.
-
-               As you navigate through the dungeon, you encounter monsters, chests and a shop.
-
-                GO KILL EM AND GET YOUR DOG!!!!</p>
-
-                <ul class="horizontal-list">
-
-                  <li class="desc">Python</li>
-
-                  <li class="desc">Game</li>
-
-                </ul>
-
-                <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-                  <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- Zelda -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
+                <img class="card-img-top" src="./images/zelda-clone.png" alt="Zelda Game" id="cardimage">
+                <div class="card-body">
+                    <h3>2D Zelda</h3>
+                    <p>In this game, you find yourself in a dark, damp dungeon searching for your kidnapped dog.
+                        Encounter monsters, chests and a shop — fight to save your dog!</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">Game</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/calc.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Calculators</h3>
-
-            <p>These scripts are simple calculator 
-
-              applications built using the Tkinter library for the graphical user
-
-              interface (GUI). It allows users to perform basic arithmetic operations
-
-              such as addition, subtraction, multiplication, and division.</p>
-
-              <ul class="horizontal-list">
-
-                <li class="desc">Python</li>
-
-                <li class="desc">Tkinter</li>
-
-              </ul>
-
-              <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-                <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- Calculators -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 22rem; height: auto;">
+                <img class="card-img-top" src="./images/calc.png" alt="Calculator" id="cardimage">
+                <div class="card-body">
+                    <h3>Calculators</h3>
+                    <p>These calculator apps use Tkinter for the GUI, supporting addition, subtraction,
+                        multiplication, and division.</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">Tkinter</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/XO's.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>XO's</h3>
-
-            <p>Play the all time classic game of XO's against the computer or against a friend.</p>
-
-            <ul class="horizontal-list">
-
-              <li class="desc">Python</li>
-
-              <li class="desc">Game</li>
-
-            </ul>
-
-            <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-              <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- XO's -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 22rem; height: auto;">
+                <img class="card-img-top" src="./images/XO's.png" alt="XO Game" id="cardimage">
+                <div class="card-body">
+                    <h3>XO's</h3>
+                    <p>Play the all-time classic XOs game against the computer or a friend.</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">Game</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
-
-      </div>
-
     </div>
 
     <br>
-
     <div class="row justify-content-center">
 
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
-
-          <img class="card-img-top" src="./images/passgen.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Password Generator</h3>
-
-            <p>This script is a simple password generator application built using the Tkinter library
-
-              for the graphical user interface (GUI). It allows users to generate passwords based
-
-              on various criteria such as length, inclusion of digits, uppercase letters, lowercase
-
-              letters, special characters, and the word "RICK".</p>
-
-              <ul class="horizontal-list">
-
-                <li class="desc">Python</li>
-
-                <li class="desc">Tkinter</li>
-
-              </ul>
-
-              <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-                <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- Password Generator -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
+                <img class="card-img-top" src="./images/passgen.png" alt="Password Generator" id="cardimage">
+                <div class="card-body">
+                    <h3>Password Generator</h3>
+                    <p>A Tkinter-based password generator that supports digits, uppercase, lowercase,
+                        symbols, and even the word "RICK".</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">Tkinter</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/frontend1.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body" href="https://github.com/Eamanmiled/Front_End_Libarys">
-
-            <h3>Frontend</h3>
-
-            <p>During the summer, I decided to refine my frontend skills as I had been primarily focusing on just Python.</p>
-
-              <ul class="horizontal-list">
-
-                <li class="desc">CSS</li>
-
-                <li class="desc">JS</li>
-
-                <li class="desc">Bootstrap</li>
-
-                <li class="desc">React</li>
-
-              </ul>
-
-              <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-                <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- Frontend -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 22rem; height: auto;">
+                <img class="card-img-top" src="./images/frontend1.png" alt="Frontend Project" id="cardimage">
+                <div class="card-body">
+                    <h3>Frontend</h3>
+                    <p>A personal summer project to refine my frontend skills, experimenting with CSS,
+                        JavaScript, Bootstrap, and React.</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">CSS</li>
+                        <li class="desc">JS</li>
+                        <li class="desc">Bootstrap</li>
+                        <li class="desc">React</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
-
-      </div>
 
     </div>
 
+    <!-- In Progress -->
     <br>
-
-      <h1 id="headingbox">In Progress</h1><!--//////////This is the progress section/////////////-->
-
+    <h1 id="headingbox">In Progress</h1>
     <br>
-
-      <div class="row justify-content-center">
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
-
-          <img class="card-img-top" src="./images/Java.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Java</h3>
-
-            <p>Java introduced me to object-oriented programming and scalable, enterprise-level
-
-              development. With Java, I've built robust applications, learned about multithreading,
-
-              and gained experience with frameworks like Spring. It has been instrumental in enhancing
-
-              my knowledge of backend development and design patterns.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/CLogo.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>C</h3>
-
-            <p>My journey with C began as a way to understand the foundational concepts of programming,
-
-              such as memory management and low-level operations. C has taught me how computers process
-
-              instructions at a deeper level, and it has improved my problem-solving skills by encouraging
-
-              efficient and optimized code.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/fullstack.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Fullstack</h3>
-
-            <p>As a full-stack developer, I've embraced both front-end and back-end technologies,
-
-              allowing me to create complete and dynamic web applications. From working with databases and
-
-              server-side logic to designing responsive and interactive user interfaces, full-stack
-
-              development has given me the flexibility to handle every aspect of a project from start
-
-              to finish.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <br>
-
-    
-
-    <h1 id="headingbox">Paused For Now</h1><!--//////////This is the paused section/////////////-->
-
-    <br>
-
-
     <div class="row justify-content-center">
 
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+        <!-- Computer Vision -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
+                <img class="card-img-top" src="./images/compare.png" alt="Computer Vision Project" id="cardimage">
+                <div class="card-body">
+                    <h3>Computer Vision</h3>
+                    <p>Using OpenCV and Python, I am developing an image/Video detection system focused on light
+                    recognition. My current use case involves detecting jet flares, simulating
+                    real-world scenarios where vision systems must identify sudden light sources
+                    under dynamic conditions.</p>
 
-        <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
-
-          <img class="card-img-top" src="./images/bar.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Bar Website</h3>
-
-            <p>This project is a complete recreation of the outdated main online webpage for "The Vat House".
-
-              The new webpage is built using Django and Bootstrap to ensure a modern, responsive, and
-
-              efficient design that actually works.</p>
-
-              <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
-
-                <i class="fa fa-github"></i></a>
-
-          </div>
-
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">OpenCV</li>
+                        <li class="desc">Tkinter</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/FlareSpotter" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
-      </div>
-
-      <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
-
-        <div class="card" style="width: 22rem; height: auto;">
-
-          <img class="card-img-top" src="./images/algos.png" alt="Card image cap" id="cardimage">
-
-          <div class="card-body">
-
-            <h3>Algorithms</h3>
-
-            <p>I'm continuously exploring algorithms because I find them both challenging and fascinating. 
-              This project reflects my ongoing interest in understanding how efficient problem-solving 
-              techniques can be applied across real-world scenarios. Whether it's sorting, 
-              searching, or optimizing, I enjoy learning the theory and putting it into 
-              practice through hands-on coding.</p>
-
-              <a href="https://github.com/Eamanmiled/algorithms" class="cardlogo">
-
-                <i class="fa fa-github"></i></a>
-
-          </div>
-
+        <!-- Stripe API -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto;">
+                <img class="card-img-top" src="./images/Buy me coffee.png" alt="Stripe API Project" id="cardimage">
+                <div class="card-body">
+                    <h3>Stripe API Integration</h3>
+                    <p>Integrating Stripes payment API into a "By Me Coffee" style web app to simulate secure
+                        transactions and checkout flows.</p>
+                    <ul class="horizontal-list">
+                        <li class="desc">Python</li>
+                        <li class="desc">Django DB</li>
+                        <li class="desc">Stripe API</li>
+                    </ul>
+                    <a href="https://github.com/Eamanmiled/Buy_Me_coffee" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
         </div>
-
-      </div>
 
     </div>
 
-    <!--projects-->
-
+    <!-- Paused -->
     <br>
+    <h1 id="headingbox">Paused For Now</h1>
+    <br>
+    <div class="row justify-content-center">
 
-      <footer style="background-color:#393e46; text-align: center; padding: 5px; text-decoration: none; color: aliceblue;">
+        <!-- Bar Website -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto; border-radius: 5%;">
+                <img class="card-img-top" src="./images/bar.png" alt="Bar Website" id="cardimage">
+                <div class="card-body">
+                    <h3>Bar Website</h3>
+                    <p>A recreation of “The Vat House” webpage using Django + Bootstrap,
+                        designed to be responsive and modern.</p>
+                    <a href="https://github.com/Eamanmiled/Front_End_Libarys" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Algorithms -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 22rem; height: auto;">
+                <img class="card-img-top" src="./images/algos.png" alt="Algorithms" id="cardimage">
+                <div class="card-body">
+                    <h3>Algorithms</h3>
+                    <p>Exploring sorting, searching, and optimization techniques through
+                        hands-on coding.</p>
+                    <a href="https://github.com/Eamanmiled/algorithms" class="cardlogo">
+                        <i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Java -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto;">
+                <img class="card-img-top" src="./images/Java.png" alt="Java Project" id="cardimage">
+                <div class="card-body">
+                    <h3>Java</h3>
+                    <p>Introduced me to OOP and enterprise-level development — worked with
+                        multithreading and Spring framework.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- C -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto;">
+                <img class="card-img-top" src="./images/CLogo.png" alt="C Project" id="cardimage">
+                <div class="card-body">
+                    <h3>C</h3>
+                    <p>Learning C taught me memory management, low-level operations, and
+                        writing optimized code.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fullstack -->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+            <div class="card" style="width:22rem; height: auto;">
+                <img class="card-img-top" src="./images/fullstack.png" alt="Fullstack Project" id="cardimage">
+                <div class="card-body">
+                    <h3>Fullstack</h3>
+                    <p>Worked across frontend + backend — databases, server-side logic, and
+                        responsive UI design.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <footer style="background-color:#393e46; text-align: center; padding: 5px; text-decoration: none; color: aliceblue;">
         <a href="./past_projects.html"><h2>List of All Projects</h2></a>
+    </footer>
 
-      </footer>
-
-    <!--javascript -->
-
+    <!-- Javascript -->
     <script src="./javascript.js"></script>
 
 </body>
-
 </html>
