@@ -1,136 +1,193 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>All Projects | Eamann Miled</title>
-
-    <link rel="icon" type="imagex-icon" href="./images/fav.ico">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="./css.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .all-projects-header {
+            padding: 8rem 2.5rem var(--space-lg);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .all-projects-header h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+        .all-projects-header p {
+            color: var(--color-text-secondary);
+            font-size: 1.05rem;
+            max-width: 500px;
+        }
+        .all-projects-list {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2.5rem var(--space-xl);
+        }
+        .all-project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: var(--space-md);
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: padding-left 0.3s;
+        }
+        .all-project-item:hover {
+            padding-left: 0.5rem;
+        }
+        .all-project-item span {
+            color: var(--color-text);
+            font-weight: 500;
+        }
+        .all-project-item a {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            white-space: nowrap;
+            transition: opacity 0.3s;
+        }
+        .all-project-item a:hover {
+            opacity: 0.7;
+        }
+        .placeholder-note {
+            color: var(--color-text-secondary);
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: var(--space-lg);
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+        @media (max-width: 768px) {
+            .all-projects-header { padding: 7rem 1.5rem var(--space-md); }
+            .all-projects-list { padding: 0 1.5rem var(--space-lg); }
+            .all-project-item { flex-direction: column; gap: 0.25rem; }
+        }
+    </style>
 </head>
+<body>
 
-<body style="background-color: rgb(255, 255, 255);overflow-x: hidden;">
-
-    <!--Main content-->
-
-    <!--Sidebar nav -->
-
-    <div id="mySidebar" class="sidebar">
-
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <h1 style="color: white;">Directory</h1>
-
-      <a href="./home.html"><h1>Home</h1></a>
-
-      <a href="./projects.html"><h1>Projects Showcase</h1></a>
-
-      <a href="./past_projects.html"><h1>Projects List</h1></a>
-
-      <a href="./coding-CV.pdf"><h1>CV</h1></a>
-
-  </div>
-
-
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
-
-    <!--main content -->
-
-    <div class="jumbotron" style="background: #f96d00; width: 100%;">
-
-      <div class="row">
-
-        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
-
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="./home.html" class="nav-logo">EM</a>
+        <div class="nav-links">
+            <a href="./home.html#about">About</a>
+            <a href="./home.html#projects">Showcase</a>
+            <a href="./past_projects.html">All Projects</a>
+            <a href="./coding-CV.pdf" target="_blank">CV</a>
+            <a href="./home.html#contact" class="nav-cta">Get in Touch</a>
         </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-        <div class="col-md-6" style="color: aliceblue;">
-
-          <br>
-
-          <h1>Welcome to a Basic None Styled Library of Past Projects</h1>
-
-          <div style="color: #393e46;">
-
-          <p class="lead">Here, you'll find all of my projects, some complete and others not.</P>
-
-          <p>This page serves to show all knowledge obtained including from college curriculum.</p>
-
-          </div>
-
-        </div>
-
-        <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
-
-        </div>
-
-      </div>
-
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="./home.html" onclick="closeMobile()">Home</a>
+        <a href="./home.html#projects" onclick="closeMobile()">Showcase</a>
+        <a href="./coding-CV.pdf" target="_blank" onclick="closeMobile()">CV</a>
+        <a href="./home.html#contact" onclick="closeMobile()">Contact</a>
     </div>
 
-    <!--projects-->
+    <!-- Header -->
+    <div class="all-projects-header">
+        <div class="hero-tag reveal">Archive</div>
+        <h1 class="reveal reveal-d1">All Projects</h1>
+        <p class="reveal reveal-d2">A complete list of everything I've built — complete, in-progress, and experimental. Some links are placeholders for now.</p>
+    </div>
 
-    <br>
+    <!-- Project List -->
+    <div class="all-projects-list">
+        <div class="all-project-item reveal">
+            <span>Portfolio Website</span>
+            <a href="./home.html">View &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Computer Vision — Light Detection</span>
+            <a href="https://github.com/Eamanmiled/FlareSpotter">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Stripe API — Buy Me Coffee</span>
+            <a href="https://github.com/Eamanmiled/Buy_Me_coffee">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>2D Zelda Clone</span>
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Password Generator</span>
+            <a href="https://github.com/Eamanmiled/Password_Generators">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Rock Paper Scissors</span>
+            <a href="https://github.com/Eamanmiled/Rock-Paper-Scissors">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Calculators</span>
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>XO's Game</span>
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Frontend Libraries Exploration</span>
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys">GitHub &rarr;</a>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Weather Forecast App <span class="placeholder-note">(placeholder)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Daily Quote Generator <span class="placeholder-note">(placeholder)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Snake Game <span class="placeholder-note">(placeholder)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>To-Do List App <span class="placeholder-note">(placeholder)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Budget Tracker <span class="placeholder-note">(placeholder)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>E-commerce Website <span class="placeholder-note">(university)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
+        <div class="all-project-item reveal">
+            <span>Movie Recommendation System <span class="placeholder-note">(university)</span></span>
+            <span class="placeholder-note">Coming soon</span>
+        </div>
 
-    <br>
+        <a href="./home.html#projects" class="back-link reveal">
+            <i class="fa fa-arrow-left"></i> Back to Showcase
+        </a>
+    </div>
 
-    <h2 style="padding-left: 4%;">Some Links may be placeholders for now</h2>
-
-    <ul style="font-size: larger; padding-left: 5%;">
-
-        <li>Weather Forecast App: Create an website that reports the current and future weather to the user.  <a href=".">|Link|</a></li>
-
-        <li>Password Generator: Develop a tool that generates passwords.  <a href="https://github.com/Eamanmiled/Password_Generators">|Link|</a></li>
-
-        <li>Daily Inspirational Quote Generator: Generate a new inspirational quote every day.  <a href=".">|Link|</a></li>
-
-        <li>Household Chore Delegator: Track and delegate household chores among multiple users.  <a href=".">|Link|</a></li>
-
-        <li>Snake Game: Develop a snake game where the snake grows as it eats food.  <a href=".">|Link|</a></li>
-
-        <li>To-Do List App  <a href=".">|Link|</a></li>
-
-        <li>Budget Tracker  <a href=".">|Link|</a></li>
-
-        <li>E-commerce Website (for university) <a href=".">|Link|</a></li>
-
-        <li>Mad Libs Story Generator  <a href=".">|Link|</a></li>
-
-        <li>Movie Recommendation System (for university) <a href=".">|Link|</a></li>
-
-        <li>Online Quiz  <a href=".">|Link|</a></li>
-
-        <li>Portfolio Website  <a href="./home.html">|Link|</a></li>
-
-        <li>Rock paper Scissors  <a href="https://github.com/Eamanmiled/Rock-Paper-Scissors">|Link|</a></li>
-
-      </ul>
-
-    <!--projects-->
-
-    <br>
-
-      <footer style="background-color:#393e46; text-align: center; padding: 5px; text-decoration: none; color: aliceblue;">
-
-        <a href="./projects.html"><h2> Back To Showcase</h2></a>
-
-      </footer>
-
-    <!--javascript -->
+    <!-- Footer -->
+    <footer class="footer">
+        <span>&copy; 2026 Eamann Miled</span>
+        <span>Built with care in Dublin</span>
+    </footer>
 
     <script src="./javascript.js"></script>
-
 </body>
-
 </html>
