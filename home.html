@@ -1,249 +1,275 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Home | Eamann Miled</title>
-
-    <link rel="icon" type="image/x-icon" href="./images/fav.ico">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>Eamann Miled — Software Engineer</title>
     <link rel="stylesheet" href="./css.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
 
-<body id="home-page">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">EM</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="./coding-CV.pdf" target="_blank">CV</a>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-  <!--Sidebar nav -->
-
-    <div id="mySidebar" class="sidebar">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <h1 style="color: white;">Directory</h1>
-
-        <a href="./home.html"><h1>Home</h1></a>
-
-        <a href="./projects.html"><h1>Projects Showcase</h1></a>
-
-        <a href="./past_projects.html"><h1>Projects List</h1></a>
-
-        <a href="./coding-CV.pdf"><h1>CV</h1></a>
-
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="./coding-CV.pdf" target="_blank" onclick="closeMobile()">CV</a>
+        <a href="#contact" onclick="closeMobile()">Get in Touch</a>
     </div>
 
-
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
-
-  <!--Sidebar nav -->
-
-  <!--Main content-->
-
-      <div class="jumbotron" style="background: #f96d00; width: 100%;">
-
-        <div class="row">
-
-          <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
-
-          </div>
-
-          <div class="col-sm-2" >
-
-            <br>
-
-            <img src="./images/cvpic.jpg" alt="" id="picofme" 
-
-            style="border-radius: 100%; height: 170px; width: 170px">
-
-            <br>
-
-            <ul class="horizontal-list">
-
-              <a href="https://github.com/Eamanmiled" class="logo"><li><i class="fa fa-github"></i></li></a>
-
-              <li></li>
-
-              <a href="https://www.linkedin.com/in/eamannmiled/" class="logo"><li><i class="fa fa-linkedin"></i></li></a>
-
-              <li></li>
-
-              <a href="https://www.dcu.ie/" class="logo"><li><i class="fa fa-book"></i></li></a>
-
-              <li></li>
-
-              <a href="mailto:eamannmiled2003@gmail.com" class="logo"><li><i class="fa fa-envelope"></i></li></a>
-
-          </ul>
-
-          </div>
-
-          <div class="col" style="color: aliceblue;">
-
-            <h1>Welcome to My CV Website</h1>
-
-            <div style="color: #393e46;">
-
-            <p class="lead">I'm excited to share my professional journey, skills, and achievements with you.
-
-            Whether you're a potential employer, collaborator, or just exploring, this page provides a comprehensive
-
-            overview of what I bring to the table.</p>
-
-            <p>Feel free to browse through my experiences, projects, and qualifications to discover
-
-            how I can contribute to your team or project. Thank you for visiting, and I look forward to
-
-            connecting with you!</p>
-
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-tag reveal">Software Engineer</div>
+            <h1 class="hero-title reveal reveal-d1">Eamann<br>Miled</h1>
+            <p class="hero-sub reveal reveal-d2">Computing for Business student at DCU, ranked 2nd in a class of 85. Building things with Python, Django, JavaScript &amp; more.</p>
+            <div class="hero-actions reveal reveal-d3">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="./coding-CV.pdf" target="_blank" class="btn-outline">Download CV</a>
             </div>
+        </div>
+        <div class="hero-scroll reveal reveal-d4">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-          </div>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="section-grid">
+            <div class="about-label reveal">
+                <span class="section-num">01</span>
+                <span>About</span>
+            </div>
+            <div class="about-content">
+                <h2 class="reveal">A developer who cares about craft.</h2>
+                <p class="reveal reveal-d1">I'm a half-Tunisian, half-Irish student pursuing a Level 8 Honours degree in Computing for Business at Dublin City University. I was elected class representative, chosen as a DCU Student Ambassador, and extended on my Co-Op contract at PwC for strong performance.</p>
+                <p class="reveal reveal-d2">My work spans frontend and backend — from responsive web apps to Python automation pipelines and computer vision projects. I enjoy building things that are both functional and thoughtfully designed.</p>
 
-          <div class="col-sm-2"><!-- easy way to just to move the cards to the right-->
+                <div class="stats reveal reveal-d3">
+                    <div class="stat">
+                        <span class="stat-num">2nd</span>
+                        <span class="stat-label">in class of 85</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">1.1</span>
+                        <span class="stat-label">Grade achieved</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">9+</span>
+                        <span class="stat-label">Months at PwC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          </div>
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="section-grid">
+            <div class="about-label reveal">
+                <span class="section-num">02</span>
+                <span>Experience</span>
+            </div>
+            <div class="exp-content">
+                <div class="exp-item reveal">
+                    <div class="exp-header">
+                        <h3>Student Ambassador — Computing Lead</h3>
+                        <span class="exp-company">Dublin City University</span>
+                    </div>
+                    <span class="exp-date">Sep 2025 — Present</span>
+                    <p>Represent DCU at open days, outreach events, and official engagements as Computing Lead. Delivered presentations to audiences of 200+ prospective students and parents. Personally selected as DCU Ambassadors representative at a formal dinner with the Chinese Ambassador.</p>
+                </div>
+                <div class="exp-item reveal reveal-d1">
+                    <div class="exp-header">
+                        <h3>Software Engineer Co-Op</h3>
+                        <span class="exp-company">PwC</span>
+                    </div>
+                    <span class="exp-date">Jan 2025 — Sep 2025</span>
+                    <p>Handled software support tickets with extensive debugging. Developed Python scripts for testing, data processing, and workflow automation. Owned multiple projects end-to-end delivering automation solutions with Selenium, Power Automate, and Power Apps. Contract extended for performance.</p>
+                </div>
+                <div class="exp-item reveal reveal-d2">
+                    <div class="exp-header">
+                        <h3>Hospitality — Bartender &amp; Waiter</h3>
+                        <span class="exp-company">Various</span>
+                    </div>
+                    <span class="exp-date">Sep 2021 — Jan 2025</span>
+                    <p>Three years of fast-paced, high-pressure environments. Built strong communication, teamwork, and problem-solving skills through direct customer service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills -->
+    <section class="skills-section">
+        <div class="section-grid">
+            <div class="about-label reveal">
+                <span class="section-num">03</span>
+                <span>Skills</span>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span><span>R</span><span>OfficeScript</span><span>Excel VBA</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Frameworks &amp; Tools</h4>
+                    <div class="skill-tags">
+                        <span>Django</span><span>Bootstrap</span><span>React</span><span>Tkinter</span><span>Pandas</span><span>Selenium</span><span>OpenCV</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Platforms</h4>
+                    <div class="skill-tags">
+                        <span>Power Automate</span><span>Power Apps</span><span>Alteryx</span><span>Trello</span><span>Stripe API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="section-grid">
+            <div class="about-label reveal">
+                <span class="section-num">04</span>
+                <span>Projects</span>
+            </div>
+            <div class="projects-intro reveal">
+                <h2>Selected Work</h2>
+                <p>A mix of complete, in-progress, and experimental projects.</p>
+            </div>
         </div>
 
-      </div>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <a href="https://github.com/Eamanmiled/FlareSpotter" target="_blank" class="project-card reveal">
+                <div class="project-index">01</div>
+                <div class="project-info">
+                    <h3>Computer Vision — Light Detection</h3>
+                    <p>Image and video processing tool to detect and highlight light sources in real-time. Uses thresholding, contour detection, and bounding box visualization for jet flare tracking.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>OpenCV</span><span>Tkinter</span>
+                    </div>
+                </div>
+                <div class="project-status status-progress">In Progress</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
 
-      <div class="arrow" id="content">
+            <!-- Project 2 -->
+            <a href="https://github.com/Eamanmiled/Buy_Me_coffee" target="_blank" class="project-card reveal">
+                <div class="project-index">02</div>
+                <div class="project-info">
+                    <h3>Stripe API — Buy Me Coffee</h3>
+                    <p>Payment integration web app simulating secure transactions and checkout flows using Stripe's API with a Django backend.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Django</span><span>Stripe API</span>
+                    </div>
+                </div>
+                <div class="project-status status-progress">In Progress</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
 
-      <img src="./images/arrow.png" alt="">
+            <!-- Project 3 -->
+            <a href="https://www.eamannmiled.com" target="_blank" class="project-card reveal">
+                <div class="project-index">03</div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>This personal portfolio site — built with HTML, CSS, JavaScript, and Bootstrap. Responsive design with clean UI/UX, hosted on GitHub Pages.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                    </div>
+                </div>
+                <div class="project-status status-complete">Complete</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
 
-      </div>
+            <!-- Project 4 -->
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys" target="_blank" class="project-card reveal">
+                <div class="project-index">04</div>
+                <div class="project-info">
+                    <h3>2D Zelda Clone</h3>
+                    <p>A dungeon-crawling adventure game — fight monsters, find chests, visit a shop, and rescue your kidnapped dog. Built entirely in Python.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Game Dev</span>
+                    </div>
+                </div>
+                <div class="project-status status-complete">Complete</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
 
-      <section id="fadeinrow">
+            <!-- Project 5 -->
+            <a href="https://github.com/Eamanmiled/Password_Generators" target="_blank" class="project-card reveal">
+                <div class="project-index">05</div>
+                <div class="project-info">
+                    <h3>Password Generator</h3>
+                    <p>Tkinter-based tool supporting digits, uppercase, lowercase, symbols, and custom character sets for generating secure passwords.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Tkinter</span>
+                    </div>
+                </div>
+                <div class="project-status status-complete">Complete</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
 
-      <br><br>
-
-      <div class="row" > <!-- this is the about me row-->
-
-        <div class="col-sm-2">
-
+            <!-- Project 6 -->
+            <a href="https://github.com/Eamanmiled/Front_End_Libarys" target="_blank" class="project-card reveal">
+                <div class="project-index">06</div>
+                <div class="project-info">
+                    <h3>Calculators &amp; XO's</h3>
+                    <p>Classic utility apps — calculators with full arithmetic operations and an XO's game with PvP and PvC modes, all built with Tkinter.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Tkinter</span>
+                    </div>
+                </div>
+                <div class="project-status status-complete">Complete</div>
+                <div class="project-arrow"><i class="fa fa-arrow-right"></i></div>
+            </a>
         </div>
 
-        <div class="col-sm-3">
-
-          <a href="https://www.linkedin.com/in/eamannmiled/"><button class="bigbox"><img src="./images/myself.png"
-
-            alt="" style="width: 200px; height: 200px; align-items: center;"></button></a>
-
+        <div class="more-projects reveal">
+            <a href="./past_projects.html" class="btn-outline">View All Projects</a>
         </div>
+    </section>
 
-        <div class="col">
-
-          <br>
-
-          <h2>ABOUT ME</h2>
-
-          <p class="lead">Hi, I'm Eamann I am a half Tunisian, half Irish student currently pursuing a level 8 honors
-
-            degree in Computing for Business at DCU. Click the box to get redirected to my Linkedin to see
-
-            what I have been up to recently.</p>
-
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div class="section-num reveal">05</div>
+            <h2 class="contact-title reveal reveal-d1">Let's connect.</h2>
+            <p class="reveal reveal-d2">Whether you're looking for a collaborator, have an opportunity, or just want to say hello — I'd love to hear from you.</p>
+            <a href="mailto:eamannmiled2003@gmail.com" class="contact-email reveal reveal-d3">eamannmiled2003@gmail.com</a>
+            <div class="social-links reveal reveal-d4">
+                <a href="https://github.com/Eamanmiled" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/eamannmiled/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.dcu.ie/" aria-label="DCU"><i class="fa fa-book"></i></a>
+                <a href="mailto:eamannmiled2003@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>
+    </section>
 
-        <div class="col-sm-2">
-
-        </div>
-
-      </div>
-
-      <br><br>
-
-      <div class="row" > <!-- this is the projects row-->
-
-        <div class="col-sm-2">
-
-        </div>
-
-        <div class="col">
-
-          <h2>Projects</h2>
-
-          <p class="lead">I've worked on several diverse projects, each of which allowed me to apply my
-
-            skills and creativity in unique ways. From building dynamic web applications to designing
-
-            user-centric interfaces and also 2D recreations of classic games, my projects demonstrate a range
-
-            of expertise in front-end and back-end development.</p>
-
-        </div>
-
-        <div class="col-sm-3">
-
-          <a href="./projects.html"><button class="bigbox"><img src="./images/projects.png" alt=""
-
-            style="width: 200px; height: 200px; align-items: center;"></button></a>
-
-        </div>
-
-        <div class="col-sm-2">
-
-        </div>
-
-      </div>
-
-
-      <br><br>
-
-
-      <div class="row"><!-- this is the CV row-->
-
-        <div class="col-sm-2">
-
-        </div>
-
-        <div class="col-sm-3">
-
-            <a href="./coding-CV.pdf"><button class="bigbox"><img src="./images/cv.png" alt=""
-
-              style="width: 200px; height: 200px; align-items: center;"></button></a>
-
-        </div>
-
-        <div class="col">
-
-          <h2>CV</h2>
-
-          <p class="lead">Looking for a detailed overview of my professional experience,
-
-            skills, and qualifications? Tap the box to view my CV in PDF format.</p>
-
-        </div>
-
-        <div class="col-sm-2">
-
-        </div>
-
-      </div>
-
-      </section>
-
-      <br>
-
-      <footer style="background-color:#393e46; text-align: center; padding: 5px; text-decoration: none; color: aliceblue;">
-
-        <a href="./home.html"><h4>Refresh</h4></a>
-
-      </footer>
-
-
-    <!--javascript -->
+    <!-- Footer -->
+    <footer class="footer">
+        <span>&copy; 2026 Eamann Miled website 2.0</span>
+        <span>Revamped with love</span>
+    </footer>
 
     <script src="./javascript.js"></script>
-
 </body>
-
 </html>
